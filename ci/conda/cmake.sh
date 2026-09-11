@@ -2,6 +2,7 @@
 
 cmake -G Ninja                                       \
     -DCMAKE_INSTALL_PREFIX:PATH=$CONDA_PREFIX        \
+    -DCMAKE_PREFIX_PATH:PATH=$CONDA_PREFIX           \
     -DCMAKE_BUILD_TYPE=Release                       \
     -DWITH_APACHE_MODULE=0                           \
     -DWITH_CAIRO=1                                   \
